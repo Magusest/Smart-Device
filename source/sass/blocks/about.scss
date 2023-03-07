@@ -1,0 +1,21 @@
+.about {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.about__title {
+  grid-column: 2/-1;
+}
+
+.about__description {
+  grid-column: 2/-1;
+}
+
+.about__button {
+  grid-column: 2/-1;
+}
+
+.about__image {
+  grid-column: 1/2;
+  grid-row: 1/5;
+}

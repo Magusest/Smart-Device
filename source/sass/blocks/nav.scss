@@ -1,0 +1,9 @@
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.nav__break {
+  break-after: column;
+}

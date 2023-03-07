@@ -1,0 +1,36 @@
+.question-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 30px;
+}
+
+.question-form__input--name {
+  grid-column: 1/2;
+}
+
+.question-form__input--phone {
+  grid-column: 2/-1;
+}
+
+.question-form__input--question {
+  grid-column: 1/-1;
+}
+
+.question-form__button {
+  grid-column: 1/2;
+  margin: auto 0;
+}
+
+.question-form__personal-data {
+  grid-column: 2/-1;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.question-form__custom-checkbox {
+  box-sizing: border-box;
+  width: 20px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+}
