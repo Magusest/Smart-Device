@@ -1,0 +1,63 @@
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: $color-black-pearl-transparent;
+  z-index: 10;
+  transition: 0.3s;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.pop-up__wrapper {
+  position: relative;
+  display: block;
+  // margin: auto;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  background-color: $color-deep-sky-blue;
+  padding: 40px;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+}
+
+.pop-up__title {
+  color: $color-default-white;
+}
+
+.pop-up__description {
+  color: $color-default-white;
+  margin-top: 15px;
+}
+
+.pop-up__button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.pop-up__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.pop-up .question-form__input--question {
+  margin-top: 0;
+}
+
+.pop-up .question-form__button {
+  margin-top: 5px;
+}
+
+.pop-up .question-form__personal-data {
+  margin-top: 0;
+  color: $color-default-white
+}
+

@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0 30px;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .question-form__input--name {
@@ -10,27 +14,90 @@
 
 .question-form__input--phone {
   grid-column: 2/-1;
+
+  @include vp-767 {
+    grid-column: 1/2;
+  }
+
+  @include vp-767 {
+    margin-top: 20px;
+  }
 }
 
 .question-form__input--question {
+  margin-top: 20px;
+  padding-top: 24px;
   grid-column: 1/-1;
+
+  @include vp-1023 {
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
+
+  @include vp-767 {
+    padding-top: 24px;
+    padding-bottom: 45px;
+  }
 }
 
 .question-form__button {
   grid-column: 1/2;
-  margin: auto 0;
+  margin-top: 38px;
+  margin-left: 1px;
+  margin-right: 9px;
+
+  @include vp-1023 {
+    margin: 35px 55px 2px 0;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    margin-top: 30px;
+  }
 }
 
 .question-form__personal-data {
   grid-column: 2/-1;
   display: flex;
-  gap: 10px;
+  gap: 11px;
   align-items: center;
+  margin-top: 50px;
+  margin-left: 11px;
+
+  @include vp-1023 {
+    margin: 0;
+    margin-top: 42px;
+  }
+
+  @include vp-767 {
+    grid-column: 1/2;
+    margin-top: 24px;
+    margin-left: 7px;
+  }
 }
 
 .question-form__custom-checkbox {
+  position: relative;
   box-sizing: border-box;
   width: 20px;
   height: 15px;
   border: 1px solid $color-default-white;
+  border-radius: 2px;
+}
+
+.question-form__input:checked ~ .question-form__custom-checkbox::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  top: 0;
+  left: 40%;
+  border-right: 1px solid $color-default-white;
+  border-bottom: 1px solid $color-default-white;
+  transform: rotate(45deg);
+}
+
+.question-form__personal-description {
+  font-size: 14px;
+  line-height: 16px;
 }

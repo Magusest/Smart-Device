@@ -1,6 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   position: relative;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -73,4 +76,33 @@
 .title,
 .description {
   margin: 0;
+}
+
+.title {
+  font-family: "RobotoCondensed", sans-serif;
+}
+
+.description {
+  font-family: "PTMono", sans-serif;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.input::placeholder {
+  color: $color-alice-blue;
+}
+
+.input {
+  font-family: "PTMono", sans-serif;
+  color: $color-alice-blue;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(4, 20, 39, 0.15);
+  padding: 16px;
+  cursor: pointer;
 }

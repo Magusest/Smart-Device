@@ -1,9 +1,145 @@
 .goods {
   background-color: $color-black-pearl;
+  color: $color-alice-blue;
+  padding: 66px 0 139px;
+
+  @include vp-1023 {
+    padding: 55px 0 75px;
+  }
+
+  @include vp-767 {
+    padding: 48px 0 86px;
+  }
+}
+
+.goods__container {
+  max-width: 1222px;
+  margin: 0 auto;
+
+  @include vp-1023 {
+    padding-left: 50px;
+    padding-right: 49px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.goods__title {
+  font-size: 36px;
+  line-height: 50px;
+
+  @include vp-1023 {
+    line-height: 52px;
+  }
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 400;
+    padding-right: 10px;
+  }
+}
+
+.goods__title--long {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.goods__title--short {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
 }
 
 .goods__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 84px;
+  margin-top: 54px;
+
+  @include vp-1439 {
+    gap: 30px;
+  }
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    margin-top: 36px;
+  }
+
+  @include vp-767 {
+    margin-top: 28px;
+  }
+}
+
+.goods__item {
+  @include vp-1023 {
+    max-height: 250px;
+  }
+}
+
+.goods__link {
+  position: relative;
+  color: $color-alice-blue;
+}
+
+.goods__link-title {
+  position: absolute;
+  font-size: 20px;
+  line-height: 30px;
+  top: 50px;
+  left: 40px;
+  padding-right: 140px;
+
+  @include vp-1023 {
+    top: 38px;
+    left: 45px;
+    padding-right: 478px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 29px;
+    top: 27px;
+    left: 31px;
+    padding-right: 106px;
+  }
+}
+
+.goods__link-button {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: $color-deep-sky-blue;
+  bottom: 0;
+  right: 1px;
+  border-radius: 4px 0 0 0;
+
+  @include vp-767 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.goods__link-button::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 50%;
+  left: 45%;
+  border-radius: 0 0 1px 0;
+  border-right: 1px solid $color-default-white;
+  border-bottom: 1px solid $color-default-white;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.goods__link-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

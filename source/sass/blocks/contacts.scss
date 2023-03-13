@@ -1,0 +1,21 @@
+.contacts__title {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.contacts__link {
+  font-family: 'PTMono';
+  color: $color-transparent;
+  font-style: normal;
+}
