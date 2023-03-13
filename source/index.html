@@ -149,12 +149,18 @@
                   <h2 class="questions__title title">Остались вопросы? Задайте их нам!</h2>
                   <p class="questions__description description">Мы проконсультируем Вас бесплатно</p>
                   <form  class="questions__form question-form" action="#">
-                    <label class="visually-hidden" for="name" >Выше имя</label>
-                    <input class="question-form__input question-form__input--name input" id="name" name="name" type="text" placeholder="Имя" required>
-                    <label class="visually-hidden" for="phone" >Выш номер телефона</label>
-                    <input class="question-form__input question-form__input--phone input" id="phone" name="phone" type="number" placeholder="Телефон" required>
-                    <label class="visually-hidden" for="question" >Вопрос который Вы хотите нам задать</label>
-                    <textarea class="question-form__input question-form__input--question input" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
+                    <label class="question-form__label question-form__label--name">
+                      <span class="visually-hidden">Выше имя</span>
+                      <input class="question-form__input  input" id="name" name="name" type="text" placeholder="Имя" required>
+                    </label>
+                    <label class="question-form__label question-form__label--phone" data-phone-validate>
+                      <span class="visually-hidden">Выш номер телефона</span>
+                      <input class="question-form__input  input" id="phone" name="phone" type="text" placeholder="Телефон" required>
+                    </label>
+                    <label class="question-form__label question-form__label--question">
+                      <span class="visually-hidden">Вопрос который Вы хотите нам задать</span>
+                      <textarea class="question-form__input question-form__input--question input" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
+                    </label>
                     <button class="question-form__button button button--question" type="submit">Задать вопрос</button>
                     <label class="question-form__personal-data description" for="personal-data">
                       <input class="question-form__input visually-hidden" type="checkbox" id="personal-data" name="personal-data">
@@ -308,13 +314,33 @@
         <h2 class="pop-up__title title">Закажите звонок</h2>
         <p class="pop-up__description description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <button class="pop-up__button button button--pop-up" data-popup-button="close"></button>
-        <form  class="pop-up__form question-form" action="#">
+        <!-- <form  class="pop-up__form question-form" action="#">
           <label class="visually-hidden" for="name" >Выше имя</label>
           <input class="question-form__input question-form__input--name input" id="name" name="name" type="text" placeholder="Имя" required>
           <label class="visually-hidden" for="phone" >Выш номер телефона</label>
           <input class="question-form__input question-form__input--phone input" id="phone" name="phone" type="number" placeholder="Телефон" required>
           <label class="visually-hidden" for="question" >Вопрос который Вы хотите нам задать</label>
           <textarea class="question-form__input question-form__input--question input" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
+          <button class="question-form__button button button--question" type="submit">Задать вопрос</button>
+          <label class="question-form__personal-data description" for="personal-data-popup">
+            <input class="question-form__input visually-hidden" type="checkbox" id="personal-data-popup" name="personal-data-popup">
+            <span class="question-form__custom-checkbox"></span>
+            <span class="question-form__personal-description description">Я согласен на обработку  персональных данных</span>
+          </label>
+        </form> -->
+        <form  class="pop-up__form question-form" action="#">
+          <label class="question-form__label question-form__label--name">
+            <span class="visually-hidden">Выше имя</span>
+            <input class="question-form__input  input" id="name" name="name" type="text" placeholder="Имя" required>
+          </label>
+          <label class="question-form__label question-form__label--phone" data-phone-validate>
+            <span class="visually-hidden">Выш номер телефона</span>
+            <input class="question-form__input  input" id="phone" name="phone" type="text" placeholder="Телефон" required>
+          </label>
+          <label class="question-form__label question-form__label--question">
+            <span class="visually-hidden">Вопрос который Вы хотите нам задать</span>
+            <textarea class="question-form__input question-form__input--question input" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
+          </label>
           <button class="question-form__button button button--question" type="submit">Задать вопрос</button>
           <label class="question-form__personal-data description" for="personal-data-popup">
             <input class="question-form__input visually-hidden" type="checkbox" id="personal-data-popup" name="personal-data-popup">

@@ -1473,7 +1473,7 @@ html {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  padding: 16px 30px;
+  padding: 16px 30px 10px;
   background-color: #041827;
 }
 
@@ -1547,7 +1547,7 @@ html {
 
 .main__questions {
   margin-left: auto;
-  padding: 166px 0 246px;
+  padding: 166px 0 249px;
 }
 
 .intro {
@@ -1845,27 +1845,39 @@ html {
   gap: 0 30px;
 }
 
-.question-form__input--name {
+.question-form__label {
+  margin: 0;
+}
+
+.question-form__label--name {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
 }
 
-.question-form__input--phone {
+.question-form__label--phone {
   grid-column: 2/-1;
 }
 
-.question-form__input--question {
-  margin-top: 20px;
-  padding-top: 24px;
+.question-form__label--question {
   grid-column: 1/-1;
+  margin-top: 8px;
+}
+
+.question-form__input {
+  width: 100%;
+}
+
+.question-form__input--question {
+  margin-top: 10px;
+  padding-top: 28px;
 }
 
 .question-form__button {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  margin-top: 38px;
+  margin-top: 29px;
   margin-left: 1px;
   margin-right: 9px;
 }
@@ -1879,7 +1891,7 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 43px;
   margin-left: 11px;
 }
 
@@ -2019,32 +2031,6 @@ html {
   flex-grow: 0;
 }
 
-.contacts__title {
-  font-size: 15px;
-  line-height: 16px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.contacts__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 5px;
-  margin-top: 20px;
-}
-
-.contacts__link {
-  font-family: "PTMono";
-  color: rgba(255, 255, 255, 0.7);
-  font-style: normal;
-}
-
 .pop-up {
   position: fixed;
   top: 0;
@@ -2099,7 +2085,7 @@ html {
   margin-top: 40px;
 }
 
-.pop-up .question-form__input--question {
+.pop-up .question-form__label--question {
   margin-top: 0;
 }
 
@@ -2327,12 +2313,12 @@ html {
   }
 
   .question-form__button {
-    margin: 35px 55px 2px 0;
+    margin: 30px 55px 2px 0;
   }
 
   .question-form__personal-data {
     margin: 0;
-    margin-top: 42px;
+    margin-top: 32px;
   }
 
   .footer {
@@ -2629,13 +2615,13 @@ html {
     grid-template-columns: 1fr;
   }
 
-  .question-form__input--phone {
+  .question-form__label--phone {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
   }
 
-  .question-form__input--phone {
+  .question-form__label--phone {
     margin-top: 20px;
   }
 
@@ -2646,7 +2632,7 @@ html {
 
   .question-form__button {
     margin: 0;
-    margin-top: 30px;
+    margin-top: 25px;
   }
 
   .question-form__personal-data {

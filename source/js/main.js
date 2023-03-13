@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {showText} from './modules/my-modules/about';
 import {showMenu} from './modules/my-modules/menu';
 import {showPopUp} from './modules/my-modules/pop-up';
+import {initFormNumberValidator} from './modules/my-modules/question-form';
 
 
 // ---------------------------------
@@ -20,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   showText();
   showMenu();
   showPopUp();
-
+  initFormNumberValidator();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
