@@ -33,13 +33,32 @@
   margin-top: 8px;
 }
 
-.question-form__input {
+.question-form input {
   width: 100%;
+  font-family: "PTMono", sans-serif;
+  color: $color-alice-blue;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(4, 20, 39, 0.15);
+  padding: 16px;
+  cursor: pointer;
 }
 
-.question-form__input--question {
+.question-form input::placeholder {
+  color: $color-alice-blue;
+}
+
+.question-form textarea {
+  width: 100%;
   margin-top: 10px;
   padding-top: 28px;
+  font-family: "PTMono", sans-serif;
+  color: $color-alice-blue;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(4, 20, 39, 0.15);
+  padding: 16px;
+  cursor: pointer;
 
   @include vp-1023 {
     padding-top: 32px;
@@ -52,7 +71,11 @@
   }
 }
 
-.question-form__button {
+.question-form textarea::placeholder {
+  color: $color-alice-blue;
+}
+
+.question-form button {
   grid-column: 1/2;
   margin-top: 29px;
   margin-left: 1px;
@@ -97,7 +120,7 @@
   border-radius: 2px;
 }
 
-.question-form__input:checked ~ .question-form__custom-checkbox::before {
+.question-form input:checked ~ .question-form__custom-checkbox::before {
   content: '';
   position: absolute;
   width: 3px;

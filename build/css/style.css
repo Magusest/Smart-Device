@@ -1869,16 +1869,71 @@ html {
   margin-top: 8px;
 }
 
-.question-form__input {
+.question-form input {
   width: 100%;
+  font-family: "PTMono", sans-serif;
+  color: #f2f5f6;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(4, 20, 39, 0.15);
+  padding: 16px;
+  cursor: pointer;
 }
 
-.question-form__input--question {
+.question-form input::-webkit-input-placeholder {
+  color: #f2f5f6;
+}
+
+.question-form input::-moz-placeholder {
+  color: #f2f5f6;
+}
+
+.question-form input:-ms-input-placeholder {
+  color: #f2f5f6;
+}
+
+.question-form input::-ms-input-placeholder {
+  color: #f2f5f6;
+}
+
+.question-form input::placeholder {
+  color: #f2f5f6;
+}
+
+.question-form textarea {
+  width: 100%;
   margin-top: 10px;
   padding-top: 28px;
+  font-family: "PTMono", sans-serif;
+  color: #f2f5f6;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(4, 20, 39, 0.15);
+  padding: 16px;
+  cursor: pointer;
 }
 
-.question-form__button {
+.question-form textarea::-webkit-input-placeholder {
+  color: #f2f5f6;
+}
+
+.question-form textarea::-moz-placeholder {
+  color: #f2f5f6;
+}
+
+.question-form textarea:-ms-input-placeholder {
+  color: #f2f5f6;
+}
+
+.question-form textarea::-ms-input-placeholder {
+  color: #f2f5f6;
+}
+
+.question-form textarea::placeholder {
+  color: #f2f5f6;
+}
+
+.question-form button {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -1910,7 +1965,7 @@ html {
   border-radius: 2px;
 }
 
-.question-form__input:checked ~ .question-form__custom-checkbox::before {
+.question-form input:checked ~ .question-form__custom-checkbox::before {
   content: "";
   position: absolute;
   width: 3px;
@@ -2078,7 +2133,7 @@ html {
   right: 15px;
 }
 
-.pop-up__form {
+.pop-up form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2094,7 +2149,7 @@ html {
   margin-top: 0;
 }
 
-.pop-up .question-form__button {
+.pop-up form button {
   margin-top: 5px;
 }
 
@@ -2311,12 +2366,12 @@ html {
     margin-top: 24px;
   }
 
-  .question-form__input--question {
+  .question-form textarea {
     padding-top: 32px;
     padding-bottom: 12px;
   }
 
-  .question-form__button {
+  .question-form button {
     margin: 30px 55px 2px 0;
   }
 
@@ -2634,12 +2689,12 @@ html {
     margin-top: 20px;
   }
 
-  .question-form__input--question {
+  .question-form textarea {
     padding-top: 24px;
     padding-bottom: 45px;
   }
 
-  .question-form__button {
+  .question-form button {
     margin: 0;
     margin-top: 25px;
   }
