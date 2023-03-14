@@ -29,6 +29,7 @@
 .goods__title {
   font-size: 36px;
   line-height: 50px;
+  z-index: 2;
 
   @include vp-1023 {
     line-height: 52px;
@@ -78,6 +79,7 @@
 
 .goods__item {
   position: relative;
+  height: 650px;
 
   @include vp-1023 {
     max-height: 250px;
@@ -88,10 +90,9 @@
   color: $color-alice-blue;
 }
 
-
-
 .goods__link-title {
-  position: absolute;
+  position: relative;
+  z-index: 3;
   font-size: 20px;
   line-height: 30px;
   top: 50px;
@@ -101,7 +102,7 @@
   @include vp-1023 {
     top: 38px;
     left: 45px;
-    padding-right: 478px;
+    padding-right: 522px;
   }
 
   @include vp-767 {
@@ -109,7 +110,7 @@
     line-height: 29px;
     top: 27px;
     left: 31px;
-    padding-right: 106px;
+    padding-right: 138px;
   }
 }
 
@@ -122,6 +123,7 @@
   bottom: 0;
   right: 1px;
   border-radius: 4px 0 0 0;
+  z-index: 2;
 
   @include vp-767 {
     width: 40px;
@@ -140,6 +142,7 @@
   border-right: 1px solid $color-default-white;
   border-bottom: 1px solid $color-default-white;
   transform: rotate(-45deg) translate(0, -50%);
+  z-index: 3;
 
   @include vp-767 {
     bottom: 14px;
@@ -148,6 +151,9 @@
 }
 
 .goods__link-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
