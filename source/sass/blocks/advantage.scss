@@ -36,7 +36,7 @@
   }
 }
 
-.advantage__title {
+.advantage h3 {
   font-size: 24px;
   line-height: 34px;
   color: $color-deep-sky-blue;
@@ -52,7 +52,7 @@
   }
 }
 
-.advantage--modify .advantage__title {
+.advantage--modify h3 {
   @include vp-767 {
     margin-top: 20px;
   }
@@ -68,7 +68,7 @@
   }
 }
 
-.advantage__description {
+.advantage p {
   font-size: 16px;
   line-height: 22px;
   color: $color-black-pearl;
@@ -84,7 +84,7 @@
   }
 }
 
-.advantage--modify .advantage__description {
+.advantage--modify p {
   @include vp-767 {
     margin-top: 12px;
   }
@@ -93,11 +93,11 @@
 .advantage:hover {
   background-color: $color-deep-sky-blue;
 
-  .advantage__title {
+  h3 {
     color: $color-alice-blue;
   }
 
-  .advantage__description {
+  p {
     color: $color-alice-blue;
   }
 }
