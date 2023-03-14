@@ -8,7 +8,7 @@
   }
 }
 
-.question-form__label{
+.question-form__label {
   margin: 0;
 }
 
@@ -35,7 +35,7 @@
 
 .question-form input {
   width: 100%;
-  font-family: 'PTMono', 'PTSans', monospace;
+  font-family: "PTMono", "PTSans", monospace;
   color: $color-alice-blue;
   border: none;
   border-radius: 4px;
@@ -51,8 +51,7 @@
 .question-form textarea {
   width: 100%;
   margin-top: 10px;
-  padding-top: 28px;
-  font-family: 'PTMono', 'PTSans', monospace;
+  font-family: "PTMono", "PTSans", monospace;
   color: $color-alice-blue;
   border: none;
   border-radius: 4px;
@@ -121,7 +120,7 @@
 }
 
 .question-form input:checked ~ .question-form__custom-checkbox::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 3px;
   height: 10px;

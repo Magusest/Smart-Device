@@ -1,6 +1,5 @@
 .button {
   box-sizing: border-box;
-  background-color: none;
   border: none;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   text-transform: uppercase;
@@ -95,7 +94,7 @@
 .button--pop-up::before,
 .button--pop-up::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 20px;
   height: 1px;
   background-color: $color-default-white;

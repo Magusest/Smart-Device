@@ -1,6 +1,8 @@
 .nav__title {
   font-size: 15px;
   line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
   text-transform: uppercase;
 
   @include vp-767 {
@@ -11,7 +13,7 @@
 
 .nav__title::before {
   @include vp-767 {
-    content: '';
+    content: "";
     position: absolute;
     width: 15px;
     height: 1px;
@@ -22,7 +24,7 @@
 }
 
 .nav__title--closed::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   height: 1px;
@@ -50,14 +52,6 @@
   }
 }
 
-.nav__title {
-  font-size: 15px;
-  line-height: 16px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
 .nav__list {
   display: flex;
   flex-direction: column;
@@ -65,7 +59,7 @@
 }
 
 .nav__link {
-  font-family: 'PTMono', 'PTSans', monospace;
+  font-family: "PTMono", "PTSans", monospace;
   font-style: normal;
   color: $color-transparent;
   flex-grow: 0;
