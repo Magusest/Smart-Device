@@ -1750,8 +1750,11 @@ html {
   margin-top: 54px;
 }
 
-.goods__link {
+.goods__item {
   position: relative;
+}
+
+.goods__link {
   color: #f2f5f6;
 }
 
@@ -1764,7 +1767,8 @@ html {
   padding-right: 140px;
 }
 
-.goods__link-button {
+.goods__link::before {
+  content: "";
   position: absolute;
   width: 60px;
   height: 60px;
@@ -1774,13 +1778,13 @@ html {
   border-radius: 4px 0 0 0;
 }
 
-.goods__link-button::after {
+.goods__link::after {
   content: "";
   position: absolute;
   width: 8px;
   height: 8px;
-  top: 50%;
-  left: 45%;
+  bottom: 24px;
+  right: 26px;
   border-radius: 0 0 1px 0;
   border-right: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
@@ -2582,9 +2586,14 @@ html {
     padding-right: 106px;
   }
 
-  .goods__link-button {
+  .goods__link::before {
     width: 40px;
     height: 40px;
+  }
+
+  .goods__link::after {
+    bottom: 14px;
+    right: 16px;
   }
 
   .questions__container {
