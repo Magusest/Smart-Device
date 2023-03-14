@@ -85,10 +85,10 @@
 
 .about__image {
   order: -1;
+  margin-bottom: auto;
 
   @include vp-1023 {
     margin-top: 4px;
-    margin-bottom: auto;
   }
 
   @include vp-767 {

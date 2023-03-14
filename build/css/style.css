@@ -1719,6 +1719,7 @@ html {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
+  margin-bottom: auto;
 }
 
 .goods {
@@ -2255,7 +2256,6 @@ html {
 
   .about__image {
     margin-top: 4px;
-    margin-bottom: auto;
   }
 
   .goods {
