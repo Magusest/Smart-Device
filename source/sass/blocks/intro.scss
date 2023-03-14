@@ -1,24 +1,27 @@
 .intro {
   position: relative;
   color: $color-alice-blue;
-  background-color: $color-black-pearl;
   margin-top: -115px;
+  padding: 343px 25%;
+  transform: translateX(-4px);
 
   @include vp-1023 {
     margin-top: -99px;
+    margin-bottom: 57px;
+    padding: 222px 51px;
+    transform: translate(0);
   }
 
   @include vp-767 {
     margin-top: -66px;
+    margin-bottom: 123px;
+    padding: 151px 22px;
+
   }
 }
 
 .intro__wrapper {
-  position: absolute;
-  top: 35%;
-  left: 25%;
-  transform: translate(-5px, -3px);
-  z-index: 10;
+  transform: translateY(-38px);
 
   @include vp-1023 {
     top: 29%;
@@ -49,6 +52,7 @@
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 3px;
+    padding-right: 100px;
   }
 }
 
@@ -73,7 +77,6 @@
 .intro__button {
   position: absolute;
   margin-top: 47px;
-  z-index: 1;
 
   @include vp-1023 {
     margin-top: 57px;
@@ -103,10 +106,15 @@
 }
 
 .intro__image {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  top: 0;
+  left: 0;
   z-index: -1;
+  background-color: $color-black-pearl;
+
 
   @include vp-1023 {
     object-position: -128px;
