@@ -55,17 +55,17 @@
   }
 }
 
-[data-hidden-text="hidden"] {
-  display: none;
-}
+// [hidden-text="hidden"] {
+//   display: none;
+// }
 
-[data-hidden-text="mobile"] {
-  display: inline;
+// [hidden-text="mobile"] {
+//   display: inline;
 
-  @include vp-767 {
-    display: none;
-  }
-}
+//   @include vp-767 {
+//     display: none;
+//   }
+// }
 
 .about button {
   margin-top: 40px;
