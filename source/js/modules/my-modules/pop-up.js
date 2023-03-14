@@ -6,12 +6,14 @@ const popUp = document.querySelector('[data-popup]');
 function showPopUp() {
   const closeButtonHendler = () => {
     popUpCloseButton.addEventListener('click', () => {
-      popUp.style.left = '100%';
+      popUp.style.opacity = '0';
+      popUp.style.zIndex = '-10';
     });
   };
 
   const openButtonHendler = () => {
-    popUp.style.left = '0';
+    popUp.style.opacity = '1';
+    popUp.style.zIndex = '10';
     closeButtonHendler();
   };
 
