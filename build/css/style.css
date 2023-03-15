@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: "PTMono";
   font-display: swap;
-  src: url("../fonts/PTMono.woff2") format("woff2");
+  src: url("../fonts/ptmono.woff2") format("woff2");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-weight: 400;
   font-family: "RobotoCondensed";
   font-display: swap;
-  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  src: url("../fonts/robotocondensed-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-weight: 700;
   font-family: "RobotoCondensed";
   font-display: swap;
-  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  src: url("../fonts/robotocondensed-bold.woff2") format("woff2");
 }
 
 *,
@@ -644,7 +644,7 @@ html {
 }
 
 .description {
-  font-family: "PTMono", "PTSans", monospace;
+  font-family: "PTMono", "Courier New", monospace;
 }
 
 .list {
@@ -674,7 +674,7 @@ html {
 }
 
 .input {
-  font-family: "PTMono", "PTSans", monospace;
+  font-family: "PTMono", "Courier New", monospace;
   color: #f2f5f6;
   border: none;
   border-radius: 4px;
@@ -1776,12 +1776,12 @@ html {
 
 .goods__link-title {
   position: relative;
+  max-width: 160px;
   z-index: 3;
   font-size: 20px;
   line-height: 30px;
   top: 50px;
   left: 40px;
-  padding-right: 140px;
 }
 
 .goods__link::before {
@@ -1892,7 +1892,7 @@ html {
 
 .question-form input {
   width: 100%;
-  font-family: "PTMono", "PTSans", monospace;
+  font-family: "PTMono", "Courier New", monospace;
   color: #f2f5f6;
   border: none;
   border-radius: 4px;
@@ -1928,7 +1928,7 @@ html {
 .question-form textarea {
   width: 100%;
   margin-top: 10px;
-  font-family: "PTMono", "PTSans", monospace;
+  font-family: "PTMono", "Courier New", monospace;
   color: #f2f5f6;
   border: none;
   border-radius: 4px;
@@ -2101,7 +2101,7 @@ html {
 }
 
 .nav__link {
-  font-family: "PTMono", "PTSans", monospace;
+  font-family: "PTMono", "Courier New", monospace;
   font-style: normal;
   color: rgba(255, 255, 255, 0.7);
   -webkit-box-flex: 0;
@@ -2369,9 +2369,9 @@ html {
   }
 
   .goods__link-title {
+    max-width: 150px;
     top: 38px;
     left: 45px;
-    padding-right: 522px;
   }
 
   .questions {
@@ -2670,11 +2670,11 @@ html {
   }
 
   .goods__link-title {
+    max-width: 134px;
     font-size: 18px;
     line-height: 29px;
     top: 27px;
     left: 31px;
-    padding-right: 138px;
   }
 
   .goods__link::before {

@@ -93,25 +93,25 @@
 
 .goods__link-title {
   position: relative;
+  max-width: 160px;
   z-index: 3;
   font-size: 20px;
   line-height: 30px;
   top: 50px;
   left: 40px;
-  padding-right: 140px;
 
   @include vp-1023 {
+    max-width: 150px;
     top: 38px;
     left: 45px;
-    padding-right: 522px;
   }
 
   @include vp-767 {
+    max-width: 134px;
     font-size: 18px;
     line-height: 29px;
     top: 27px;
     left: 31px;
-    padding-right: 138px;
   }
 }
 
