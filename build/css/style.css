@@ -400,6 +400,14 @@ template {
   src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
 }
 
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "RobotoCondensed";
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+}
+
 *,
 *::before,
 *::after {
@@ -1554,7 +1562,7 @@ html {
   position: relative;
   color: #f2f5f6;
   margin-top: -115px;
-  padding: 343px 25%;
+  padding: 343px 25% 243px;
   -webkit-transform: translateX(-4px);
   -ms-transform: translateX(-4px);
   transform: translateX(-4px);
@@ -1576,14 +1584,16 @@ html {
 
 .intro__description {
   margin-top: 31px;
+  margin-bottom: 47px;
   max-width: 684px;
   font-size: 22px;
   line-height: 34px;
 }
 
 .intro__button {
-  position: absolute;
-  margin-top: 47px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .intro__button-short-text {
@@ -1738,6 +1748,7 @@ html {
 .goods__title {
   font-size: 36px;
   line-height: 50px;
+  font-weight: 400;
   z-index: 2;
 }
 
@@ -2265,8 +2276,8 @@ html {
 
   .intro {
     margin-top: -99px;
-    margin-bottom: 57px;
-    padding: 222px 51px;
+    margin-bottom: 41px;
+    padding: 222px 51px 127px;
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
     transform: translate(0);
@@ -2285,10 +2296,10 @@ html {
 
   .intro__description {
     margin-top: 1px;
+    margin-bottom: 57px;
   }
 
   .intro__button {
-    margin-top: 57px;
     margin-left: 46px;
   }
 
@@ -2510,7 +2521,7 @@ html {
 
   .intro {
     margin-top: -66px;
-    margin-bottom: 123px;
+    margin-bottom: 66px;
     padding: 151px 22px;
   }
 
@@ -2533,6 +2544,7 @@ html {
     font-size: 14px;
     line-height: 22px;
     margin-top: 7px;
+    margin-bottom: 0;
     -webkit-transform: translateX(-3px);
     -ms-transform: translateX(-3px);
     transform: translateX(-3px);
@@ -2868,6 +2880,12 @@ html {
     -webkit-transform: translateY(calc(-50% - 5px));
     -ms-transform: translateY(calc(-50% - 5px));
     transform: translateY(calc(-50% - 5px));
+  }
+}
+
+@media (max-width: 374px) {
+  .intro {
+    margin-bottom: 37px;
   }
 }
 
