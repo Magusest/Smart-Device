@@ -1337,7 +1337,6 @@ html {
 }
 
 .header {
-  background-color: #041827;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -1398,7 +1397,6 @@ html {
 .button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: none;
   border: none;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   text-transform: uppercase;
@@ -1421,8 +1419,8 @@ html {
 }
 
 .button--modal:hover {
-  background-color: #00B2FF;
-  border-color: #00B2FF;
+  background-color: #00b2ff;
+  border-color: #00b2ff;
 }
 
 .button--modal:active {
@@ -1436,7 +1434,7 @@ html {
   line-height: 22px;
   color: #f2f5f6;
   padding: 16px 28px;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
 }
 
 .button--intro:hover {
@@ -1452,14 +1450,14 @@ html {
 .button--about {
   font-size: 14px;
   line-height: 16px;
-  color: #00B2FF;
+  color: #00b2ff;
   padding: 14px 48px;
-  border: 1px solid #00B2FF;
+  border: 1px solid #00b2ff;
 }
 
 .button--about:hover {
   color: #f2f5f6;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
 }
 
 .button--about:active {
@@ -1525,6 +1523,10 @@ html {
   display: flex;
   gap: 15px;
   color: #f2f5f6;
+}
+
+.logo__image--mobile {
+  display: none;
 }
 
 .logo__title {
@@ -1635,7 +1637,7 @@ html {
   position: absolute;
   width: 5px;
   height: 100%;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   top: 0;
   left: 0;
 }
@@ -1643,7 +1645,7 @@ html {
 .advantage h3 {
   font-size: 24px;
   line-height: 34px;
-  color: #00B2FF;
+  color: #00b2ff;
   margin-top: 20px;
 }
 
@@ -1651,7 +1653,7 @@ html {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
-  fill: #00B2FF;
+  fill: #00b2ff;
 }
 
 .advantage p {
@@ -1662,7 +1664,7 @@ html {
 }
 
 .advantage:hover {
-  background-color: #00B2FF;
+  background-color: #00b2ff;
 }
 
 .advantage:hover h3 {
@@ -1780,7 +1782,7 @@ html {
   position: absolute;
   width: 60px;
   height: 60px;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   bottom: 0;
   right: 1px;
   border-radius: 4px 0 0 0;
@@ -1815,8 +1817,8 @@ html {
 
 .questions {
   position: relative;
-  background: -o-linear-gradient(131deg, #00B2FF 66%, #006692 66%);
-  background: linear-gradient(319deg, #00B2FF 66%, #006692 66%);
+  background: -o-linear-gradient(131deg, #00b2ff 66%, #006692 66%);
+  background: linear-gradient(319deg, #00b2ff 66%, #006692 66%);
   color: #ffffff;
 }
 
@@ -1915,7 +1917,6 @@ html {
 .question-form textarea {
   width: 100%;
   margin-top: 10px;
-  padding-top: 28px;
   font-family: "PTMono", "PTSans", monospace;
   color: #f2f5f6;
   border: none;
@@ -2052,6 +2053,8 @@ html {
 .nav__title {
   font-size: 15px;
   line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -2073,14 +2076,6 @@ html {
   display: -ms-flexbox;
   display: flex;
   gap: 48px;
-}
-
-.nav__title {
-  font-size: 15px;
-  line-height: 16px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .nav__list {
@@ -2123,7 +2118,7 @@ html {
   top: 50%;
   left: 50%;
   width: 500px;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   padding: 40px;
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%);
@@ -2223,6 +2218,10 @@ html {
 }
 
 @media (max-width: 1023px) {
+  .container {
+    padding: 0;
+  }
+
   .header {
     padding: 20px 0;
   }
@@ -2365,7 +2364,7 @@ html {
   }
 
   .questions {
-    background: #00B2FF;
+    background: #00b2ff;
   }
 
   .questions__container {
@@ -2493,8 +2492,11 @@ html {
   }
 
   .logo__image--header {
-    width: 35px;
-    height: 35px;
+    display: none;
+  }
+
+  .logo__image--mobile {
+    display: block;
   }
 
   .logo__wrapper--header {

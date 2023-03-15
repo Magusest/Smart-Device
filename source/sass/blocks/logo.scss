@@ -6,8 +6,15 @@
 
 .logo__image--header {
   @include vp-767 {
-    width: 35px;
-    height: 35px;
+    display: none;
+  }
+}
+
+.logo__image--mobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
   }
 }
 
