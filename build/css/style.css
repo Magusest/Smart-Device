@@ -1525,10 +1525,6 @@ html {
   color: #f2f5f6;
 }
 
-.logo__image--mobile {
-  display: none;
-}
-
 .logo__title {
   font-size: 25px;
   line-height: 30px;
@@ -2496,11 +2492,8 @@ html {
   }
 
   .logo__image--header {
-    display: none;
-  }
-
-  .logo__image--mobile {
-    display: block;
+    width: 35px;
+    height: 35px;
   }
 
   .logo__wrapper--header {
