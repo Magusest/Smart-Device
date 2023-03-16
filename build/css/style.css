@@ -1562,16 +1562,7 @@ html {
   position: relative;
   color: #f2f5f6;
   margin-top: -115px;
-  padding: 343px 25% 243px;
-  -webkit-transform: translateX(-4px);
-  -ms-transform: translateX(-4px);
-  transform: translateX(-4px);
-}
-
-.intro__wrapper {
-  -webkit-transform: translateY(-38px);
-  -ms-transform: translateY(-38px);
-  transform: translateY(-38px);
+  padding: 305px 0 281px 476px;
 }
 
 .intro__title {
@@ -1579,7 +1570,7 @@ html {
   line-height: 94px;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 8px;
+  letter-spacing: 7px;
 }
 
 .intro__description {
@@ -1777,6 +1768,7 @@ html {
 }
 
 .goods__link-title {
+  display: inline-block;
   position: relative;
   max-width: 160px;
   z-index: 3;
@@ -2280,9 +2272,6 @@ html {
     margin-top: -99px;
     margin-bottom: 41px;
     padding: 222px 51px 127px;
-    -webkit-transform: translate(0);
-    -ms-transform: translate(0);
-    transform: translate(0);
   }
 
   .intro__wrapper {
@@ -2524,15 +2513,12 @@ html {
   .intro {
     margin-top: -66px;
     margin-bottom: 66px;
-    padding: 151px 22px;
+    padding: 151px 0 151px 26px;
   }
 
   .intro__wrapper {
     top: 27%;
     left: 7%;
-    -webkit-transform: translate(5px, 0);
-    -ms-transform: translate(5px, 0);
-    transform: translate(5px, 0);
   }
 
   .intro__title {
