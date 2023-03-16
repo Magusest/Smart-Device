@@ -1720,6 +1720,13 @@ html {
   margin-top: 40px;
 }
 
+.about picture {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  min-width: 150px;
+}
+
 .about img {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
@@ -2270,8 +2277,8 @@ html {
 
   .intro {
     margin-top: -99px;
-    margin-bottom: 41px;
-    padding: 222px 51px 127px;
+    margin-bottom: 79px;
+    padding: 184px 50px 127px;
   }
 
   .intro__wrapper {

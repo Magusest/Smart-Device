@@ -81,6 +81,11 @@
   }
 }
 
+.about picture {
+  order: -1;
+  min-width: 150px;
+}
+
 .about img {
   order: -1;
   margin-bottom: auto;
