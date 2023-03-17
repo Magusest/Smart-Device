@@ -3,7 +3,8 @@
   font-weight: 400;
   font-family: "PTMono";
   font-display: swap;
-  src: url("../fonts/ptmono.woff2") format("woff2");
+  src: url("../fonts/ptmono.woff2") format("woff2"),
+       url("../fonts/ptmono.woff") format("woff");
 }
 
 @font-face {
