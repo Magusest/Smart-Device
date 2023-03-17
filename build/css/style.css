@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: "PTMono";
   font-display: swap;
-  src: url("../fonts/ptmono.woff2") format("woff2");
+  src: url("../fonts/ptmono.woff2") format("woff2"), url("../fonts/ptmono.woff") format("woff");
 }
 
 @font-face {
@@ -1562,7 +1562,7 @@ html {
   position: relative;
   color: #f2f5f6;
   margin-top: -115px;
-  padding: 305px 0 281px 476px;
+  padding: 305px 25vw 281px 25vw;
 }
 
 .intro__title {
