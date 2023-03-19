@@ -2,6 +2,7 @@
   display: flex;
   gap: 15px;
   color: $color-alice-blue;
+  user-select: none;
 }
 
 .logo__image--header {

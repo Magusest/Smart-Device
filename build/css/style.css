@@ -557,6 +557,19 @@ html {
   margin: 0 auto;
 }
 
+a {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: text;
+}
+
 .wrapper {
   position: relative;
   display: -webkit-box;
@@ -1403,6 +1416,7 @@ html {
 }
 
 .button {
+  cursor: pointer;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
@@ -1415,6 +1429,16 @@ html {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button:active {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .button--modal {
@@ -1426,15 +1450,10 @@ html {
   z-index: 3;
 }
 
-.button--modal:hover {
+.button--modal:hover,
+.button--modal:focus {
   background-color: #00b2ff;
   border-color: #00b2ff;
-}
-
-.button--modal:active {
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
 }
 
 .button--intro {
@@ -1445,14 +1464,9 @@ html {
   background-color: #00b2ff;
 }
 
-.button--intro:hover {
+.button--intro:hover,
+.button--intro:focus {
   background-color: #041827;
-}
-
-.button--intro:active {
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
 }
 
 .button--about {
@@ -1463,7 +1477,8 @@ html {
   border: 1px solid #00b2ff;
 }
 
-.button--about:hover {
+.button--about:hover,
+.button--about:focus {
   color: #f2f5f6;
   background-color: #00b2ff;
 }
@@ -1483,6 +1498,11 @@ html {
   color: #ffffff;
   padding: 16px 30px 10px;
   background-color: #041827;
+}
+
+.button--question:hover,
+.button--question:focus {
+  background-color: #006692;
 }
 
 .button--pop-up {
@@ -1514,7 +1534,8 @@ html {
   transform: rotate(-45deg);
 }
 
-.button--pop-up:hover {
+.button--pop-up:hover,
+.button--pop-up:focus {
   background-color: #041827;
 }
 
@@ -1530,6 +1551,10 @@ html {
   display: flex;
   gap: 15px;
   color: #f2f5f6;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .logo__title {
@@ -1909,31 +1934,36 @@ html {
   border-radius: 4px;
   background-color: rgba(4, 20, 39, 0.15);
   padding: 16px;
-  cursor: pointer;
 }
 
 .question-form input::-webkit-input-placeholder {
-  color: #f2f5f6;
+  color: rgba(4, 24, 39, 0.7);
 }
 
 .question-form input::-moz-placeholder {
-  color: #f2f5f6;
+  color: rgba(4, 24, 39, 0.7);
 }
 
 .question-form input:-ms-input-placeholder {
-  color: #f2f5f6;
+  color: rgba(4, 24, 39, 0.7);
 }
 
 .question-form input::-ms-input-placeholder {
-  color: #f2f5f6;
+  color: rgba(4, 24, 39, 0.7);
 }
 
 .question-form input::placeholder {
-  color: #f2f5f6;
+  color: rgba(4, 24, 39, 0.7);
 }
 
 .question-form input[type=checkbox] {
   width: auto;
+  cursor: pointer;
+}
+
+.question-form input[type=checkbox]:hover ~ span,
+.question-form input[type=checkbox]:focus ~ span {
+  outline: 2px double #041827;
 }
 
 .question-form textarea {
@@ -1945,27 +1975,26 @@ html {
   border-radius: 4px;
   background-color: rgba(4, 20, 39, 0.15);
   padding: 26px 16px 20px;
-  cursor: pointer;
 }
 
 .question-form textarea::-webkit-input-placeholder {
-  color: #f2f5f6;
+  color: rgba(4, 24, 39, 0.7);
 }
 
 .question-form textarea::-moz-placeholder {
-  color: #f2f5f6;
+  color: rgba(4, 24, 39, 0.7);
 }
 
 .question-form textarea:-ms-input-placeholder {
-  color: #f2f5f6;
+  color: rgba(4, 24, 39, 0.7);
 }
 
 .question-form textarea::-ms-input-placeholder {
-  color: #f2f5f6;
+  color: rgba(4, 24, 39, 0.7);
 }
 
 .question-form textarea::placeholder {
-  color: #f2f5f6;
+  color: rgba(4, 24, 39, 0.7);
 }
 
 .question-form button {
@@ -1988,6 +2017,7 @@ html {
   align-items: center;
   margin-top: 43px;
   margin-left: 11px;
+  cursor: pointer;
 }
 
 .question-form__custom-checkbox {
@@ -1998,6 +2028,7 @@ html {
   height: 15px;
   border: 1px solid #ffffff;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .question-form input:checked ~ .question-form__custom-checkbox::before {
@@ -2127,6 +2158,7 @@ html {
   top: 0;
   left: 0;
   opacity: 0;
+  overflow: hidden;
   width: 100vw;
   height: 100%;
   background-color: rgba(4, 24, 39, 0.7);
@@ -2139,16 +2171,16 @@ html {
 .pop-up__wrapper {
   position: relative;
   display: block;
-  top: 445px;
-  left: 952px;
+  top: 50%;
+  left: 50%;
   width: 500px;
   background-color: #00b2ff;
   padding: 40px;
   padding-top: 36px;
   border-radius: 4px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-51%, -54%);
+  -ms-transform: translate(-51%, -54%);
+  transform: translate(-51%, -54%);
 }
 
 .pop-up__title {

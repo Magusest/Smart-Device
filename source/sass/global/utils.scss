@@ -4,6 +4,16 @@ html {
   margin: 0 auto;
 }
 
+a {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  user-select: none;
+  cursor: text;
+}
+
 .wrapper {
   position: relative;
   display: flex;

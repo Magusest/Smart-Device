@@ -41,15 +41,20 @@
   border-radius: 4px;
   background-color: rgba(4, 20, 39, 0.15);
   padding: 16px;
-  cursor: pointer;
 }
 
 .question-form input::placeholder {
-  color: $color-alice-blue;
+  color: $color-black-pearl-transparent;
 }
 
 .question-form input[type="checkbox"] {
   width: auto;
+  cursor: pointer;
+}
+
+.question-form input[type="checkbox"]:hover ~ span ,
+.question-form input[type="checkbox"]:focus ~ span {
+  outline: 2px double $color-black-pearl;
 }
 
 .question-form textarea {
@@ -61,7 +66,6 @@
   border-radius: 4px;
   background-color: rgba(4, 20, 39, 0.15);
   padding: 26px 16px 20px;
-  cursor: pointer;
 
   @include vp-1023 {
     padding-top: 32px;
@@ -75,7 +79,7 @@
 }
 
 .question-form textarea::placeholder {
-  color: $color-alice-blue;
+  color: $color-black-pearl-transparent;
 }
 
 .question-form button {
@@ -101,6 +105,7 @@
   align-items: center;
   margin-top: 43px;
   margin-left: 11px;
+  cursor: pointer;
 
   @include vp-1023 {
     margin: 0;
@@ -121,6 +126,7 @@
   height: 15px;
   border: 1px solid $color-default-white;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .question-form input:checked ~ .question-form__custom-checkbox::before {
