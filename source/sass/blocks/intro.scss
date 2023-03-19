@@ -1,6 +1,8 @@
 .intro {
   position: relative;
+  z-index: 1;
   color: $color-alice-blue;
+  background-color: $color-black-pearl;
   margin-top: -115px;
   padding: 305px 25vw 281px;
 
@@ -12,7 +14,7 @@
   @include vp-767 {
     margin-top: -66px;
     margin-bottom: 66px;
-    padding: 151px 26px 151px 26px;
+    padding: 151px 26px 151px;
   }
 
   @include vp-374 {
@@ -21,7 +23,7 @@
 }
 
 .intro__wrapper {
-
+  z-index: 2;
   @include vp-1023 {
     top: 29%;
     left: 7%;

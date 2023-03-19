@@ -95,11 +95,10 @@
 .button--pop-up::after {
   position: absolute;
   content: "";
-  width: 20px;
+  width: 26px;
   height: 1px;
   background-color: $color-default-white;
   border-radius: 2px;
-  left: 10px;
 }
 
 .button--pop-up::before {
