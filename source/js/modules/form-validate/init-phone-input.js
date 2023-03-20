@@ -26,7 +26,6 @@ const onPhoneInputFocus = ({target}) => {
     target.value = baseCountryCode;
   }
   target.addEventListener('input', onPhoneInputInput);
-  target.addEventListener('blur', onPhoneInputBlur);
   target.addEventListener('keydown', onPhoneInputKeydown);
   target.addEventListener('paste', onPhoneInputPaste);
   target.addEventListener('click', onPhoneInputClick);
@@ -59,27 +58,6 @@ const onPhoneInputKeydown = (e) => {
   if (e.target.selectionStart < 4 && (e.keyCode === 37 || e.keyCode === 13)) {
     e.preventDefault();
     e.target.setSelectionRange(3, 3);
-  }
-};
-
-const onPhoneInputBlur = ({target}) => {
-  if (target.value === baseCountryCode) {
-    const parent = target.closest('[data-validate-type="phone"]');
-    target.value = '';
-    if (!parent.hasAttribute('data-required')) {
-      parent.classList.remove('is-valid');
-      parent.classList.remove('is-invalid');
-      const parentMessage = parent.querySelector('.input-message');
-      if (parentMessage) {
-        parentMessage.remove();
-      }
-    }
-    parent.classList.remove('not-empty');
-    target.removeEventListener('input', onPhoneInputInput);
-    target.removeEventListener('blur', onPhoneInputBlur);
-    target.removeEventListener('keydown', onPhoneInputKeydown);
-    target.removeEventListener('paste', onPhoneInputPaste);
-    target.removeEventListener('click', onPhoneInputClick);
   }
 };
 

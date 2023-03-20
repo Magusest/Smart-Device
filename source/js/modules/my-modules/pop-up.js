@@ -1,6 +1,10 @@
+import { FocusLock } from '../modals/focus-lock';
+
 const popUpOpenButton = document.querySelector('[data-popup-button]');
 const popUpCloseButton = document.querySelector('[data-popup-button="close"]');
 const popUp = document.querySelector('[data-popup]');
+const inputName = document.querySelector('[data-popup-name]');
+const focusLock = new FocusLock();
 
 
 function showPopUp() {
@@ -9,6 +13,7 @@ function showPopUp() {
     popUp.style.opacity = '0';
     popUp.style.zIndex = '-10';
     document.body.style.overflow = '';
+    focusLock.unlock();
   };
 
   const closeButtonHendler = () => {
@@ -24,15 +29,19 @@ function showPopUp() {
     }
   };
 
+  const unscrollHandler = (e) => {
+    if (e.target === popUp) {
+      hidePopUp();
+    }
+  };
+
   const openButtonHendler = () => {
     popUp.style.opacity = '1';
     popUp.style.zIndex = '10';
     document.body.style.overflow = 'hidden';
-    popUp.addEventListener('click', (e)=> {
-      if (e.target === popUp) {
-        hidePopUp();
-      }
-    });
+    focusLock.lock('[data-popup]');
+    inputName.focus();
+    popUp.addEventListener('click', unscrollHandler);
     closeButtonHendler();
   };
 
