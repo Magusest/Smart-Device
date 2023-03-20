@@ -34,6 +34,11 @@ function showPopUp() {
 
   popUpOpenButton.addEventListener('click', openButtonHendler);
   document.addEventListener('keydown', onDocumentKeyDown);
+  window.addEventListener('click', (evt) => {
+    if (!evt.target(popUpModal)) {
+      hidePopUp();
+    }
+  });
 }
 
 export {

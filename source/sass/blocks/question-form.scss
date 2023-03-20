@@ -52,7 +52,7 @@
   cursor: pointer;
 }
 
-.question-form input[type="checkbox"]:hover ~ span ,
+.question-form input[type="checkbox"]:hover ~ span,
 .question-form input[type="checkbox"]:focus ~ span {
   outline: 2px double $color-black-pearl;
 }
