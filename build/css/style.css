@@ -1522,6 +1522,8 @@ textarea {
   height: 1px;
   background-color: #ffffff;
   border-radius: 2px;
+  top: 24px;
+  right: 10px;
 }
 
 .button--pop-up::before {
@@ -1590,7 +1592,7 @@ textarea {
   color: #f2f5f6;
   background-color: #041827;
   margin-top: -115px;
-  padding: 305px 25vw 281px;
+  padding: 424px 476px 282px;
 }
 
 .intro__wrapper {
@@ -2180,9 +2182,9 @@ textarea {
   padding: 40px;
   padding-top: 36px;
   border-radius: 4px;
-  -webkit-transform: translate(-51%, -54%);
-  -ms-transform: translate(-51%, -54%);
-  transform: translate(-51%, -54%);
+  -webkit-transform: translate(-258px, -283px);
+  -ms-transform: translate(-258px, -283px);
+  transform: translate(-258px, -283px);
 }
 
 .pop-up__title {
@@ -2201,8 +2203,8 @@ textarea {
 
 .pop-up__button {
   position: absolute;
-  top: 15px;
-  right: 28px;
+  top: 11px;
+  right: 12px;
 }
 
 .pop-up form {
