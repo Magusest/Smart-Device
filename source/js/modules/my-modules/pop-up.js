@@ -47,6 +47,7 @@ function showPopUp() {
 
   popUpOpenButton.addEventListener('click', openButtonHendler);
   document.addEventListener('keydown', onDocumentKeyDown);
+  popUp.addEventListener('submit', hidePopUp);
 }
 
 export {
