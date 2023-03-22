@@ -2306,7 +2306,6 @@ textarea {
   display: none;
   top: 0;
   left: 0;
-  overflow: hidden;
   width: 100vw;
   height: 100%;
   background-color: rgba(4, 24, 39, 0.7);
@@ -2318,7 +2317,7 @@ textarea {
   position: relative;
   background-color: transparent;
   padding: 0 5%;
-  top: 50%;
+  top: 35%;
   color: #f2f5f6;
 }
 

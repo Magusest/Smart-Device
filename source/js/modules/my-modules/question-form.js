@@ -9,6 +9,7 @@ function initFormValidate() {
 
   const hideSuccess = () => {
     success.style.display = 'none';
+    document.body.style.overflow = '';
   };
 
   const onDocumentKeyDown = (evt) => {
@@ -21,6 +22,7 @@ function initFormValidate() {
   const showSuccess = () => {
     success.style.display = 'block';
     success.addEventListener('click', hideSuccess);
+    setTimeout(hideSuccess, 5000);
   };
 
   numberContainers.forEach((numberContainer) => {
@@ -30,8 +32,9 @@ function initFormValidate() {
   formComponents.forEach((formComponent) => {
     formComponent.addEventListener('submit', (evt) => {
       evt.preventDefault();
-      showSuccess();
-      console.log('work');
+      document.body.style.overflow = 'hidden';
+      setTimeout(showSuccess(), 1000);
+      formComponent.reset();
     });
   });
 

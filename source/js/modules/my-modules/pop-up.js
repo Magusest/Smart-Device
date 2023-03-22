@@ -12,7 +12,7 @@ function showPopUp() {
   const hidePopUp = () => {
     popUp.style.opacity = '0';
     popUp.style.zIndex = '-10';
-    document.body.style.overflow = '';
+    // document.body.style.overflow = '';
     focusLock.unlock();
   };
 
