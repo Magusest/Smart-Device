@@ -6,7 +6,6 @@ function initFormValidate() {
   const formComponents = document.querySelectorAll('[data-form-validate]');
   const numberContainers = document.querySelectorAll('[data-phone-validate]');
   const success = document.querySelector('[data-success]');
-  console.log(formComponents);
 
   const hideSuccess = () => {
     success.style.display = 'none';
