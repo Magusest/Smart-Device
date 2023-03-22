@@ -83,10 +83,15 @@
   min-height: 650px;
   background-color: $color-cerulean;
   z-index: 0;
+  transition: 0.3s;
 
   @include vp-1023 {
     min-height: 250px;
   }
+}
+
+.goods__item:hover {
+  opacity: 0.5;
 }
 
 .goods__link {

@@ -15,6 +15,10 @@
   max-width: 1222px;
   margin: 0 auto;
 
+  @include vp-1439 {
+    grid-template-columns: 1fr 580px;
+  }
+
   @include vp-1023 {
     grid-template-columns: 1fr;
     padding-left: 50px;
@@ -23,6 +27,7 @@
 
   @include vp-767 {
     padding: 0;
+    gap: 0;
   }
 }
 

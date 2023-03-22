@@ -65,6 +65,14 @@
 }
 
 .pop-up .question-form__personal-data {
+  order: 5;
   margin-top: 0;
+  margin-left: 9px;
   color: $color-default-white;
+}
+
+
+.pop-up .question-form__custom-checkbox {
+  width: 14px;
+  height: 14px;
 }

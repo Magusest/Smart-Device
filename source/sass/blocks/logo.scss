@@ -5,6 +5,15 @@
   user-select: none;
 }
 
+.logo__image {
+  transition: 0.3s;
+}
+
+.logo__image:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
 .logo__image--header {
   @include vp-767 {
     width: 35px;
